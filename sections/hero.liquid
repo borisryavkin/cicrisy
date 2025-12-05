@@ -1,0 +1,30 @@
+<div class="hero-section">
+  <h1>{{ section.settings.heading | default: "CIRCRISY" }}</h1>
+  <p>{{ section.settings.subheading | default: "Curated Skate & Streetwear" }}</p>
+</div>
+
+{% schema %}
+{
+  "name": "Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "CIRCRISY"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Curated Skate & Streetwear"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}
+
